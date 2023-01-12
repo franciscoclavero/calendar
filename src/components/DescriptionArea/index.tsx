@@ -1,11 +1,11 @@
 import styled from "./style.module.css";
 
-const HourArea = () => {
+const DescriptionArea = () => {
   return (
     <div className={styled.body}>
-      Hora
+      Descrição
     </div>
   )
 };
 
-export default HourArea;
+export default DescriptionArea;

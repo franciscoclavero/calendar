@@ -1,4 +1,4 @@
-export const timeCalendar: string[] = [
+export const timeDay: string[] = [
   '00:00',
   '00:30',
   '01:00',
