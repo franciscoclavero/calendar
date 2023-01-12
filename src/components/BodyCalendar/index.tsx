@@ -1,13 +1,16 @@
-import HeaderArea from "src/components/HeaderArea";
-import ContentArea from "../ContentArea";
+import { dayWeek } from "../constans/dayWeek";
+import DayWeekColumn from "../DayWeekColumn";
 
 import styled from "./style.module.css";
 
 const BodyCalendar = () => {
   return (
     <div className={styled.body}>
-      <HeaderArea />
-      <ContentArea />
+      {
+        dayWeek.map((day) => {
+          return <DayWeekColumn dayWeek={day}/>
+        })
+      }
     </div>
   );
 };

@@ -1,4 +1,4 @@
-export const headerTitle: string[] = [
+export const dayWeek: string[] = [
   'Domingo',
   'Segunda',
   'Terça', 
