@@ -1,6 +1,8 @@
+import styled from "./style.module.css";
+
 const BodyCalendar = () => {
   return (
-    <div>
+    <div className={styled.body}>
       BodyCalendar
     </div>
   );
