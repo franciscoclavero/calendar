@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 }
 
-main {
+/* main {
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -50,4 +50,4 @@ code {
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
+} */
