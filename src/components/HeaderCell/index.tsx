@@ -1,6 +1,12 @@
-const HeaderCell = () => {
+import styled from "./style.module.css";
+
+interface InterfaceHeaderCell {
+  title: string;
+}
+
+const HeaderCell = ({ title }:InterfaceHeaderCell )  => {
   return (
-    <div>Header</div>
+    <div className={styled.cell}>{title}</div>
   );
 };
 
