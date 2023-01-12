@@ -8,7 +8,7 @@ const BodyCalendar = () => {
     <div className={styled.body}>
       {
         dayWeek.map((day) => {
-          return <DayWeekColumn dayWeek={day}/>
+          return <DayWeekColumn key={day} dayWeek={day}/>
         })
       }
     </div>
