@@ -1,5 +1,7 @@
 .body {
-  height: 100%;
-  width: 100%;
   background-color: #56505E;
+  border: 1px solid #41403E;
+  height: 100%;
+  margin: auto;
+  width: 1050px;
 }
