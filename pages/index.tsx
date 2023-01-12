@@ -1,5 +1,5 @@
 import styled from '@/pages/index.module.css'
-import BodyCalendar from 'src/BodyCalendar'
+import BodyCalendar from 'src/components/BodyCalendar'
 
 
 
