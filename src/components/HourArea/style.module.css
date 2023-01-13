@@ -2,4 +2,13 @@
   height: 100%;
   width: 32px;
   border-right: 1px solid #41403E;
+  padding: 1px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  text-align: center;
 }

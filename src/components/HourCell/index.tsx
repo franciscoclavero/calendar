@@ -1,13 +1,16 @@
-import { Fragment } from "react";
-import { timeDay } from "../constans/timeDay";
 import DescriptionArea from "../DescriptionArea";
 import HourArea from "../HourArea";
+
 import styled from "./style.module.css";
 
-const HourCell = () => {
+interface InterfaceHourCell {
+  hour: string;
+}
+
+const HourCell = ({ hour }: InterfaceHourCell) => {
   return (
     <div className={styled.body}> 
-      <HourArea />
+      <HourArea hour={hour}/>
       <DescriptionArea />
     </div>
   )

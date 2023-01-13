@@ -1,9 +1,13 @@
 import styled from "./style.module.css";
 
-const HourArea = () => {
+interface InterfaceHourArea {
+  hour: string;
+}
+
+const HourArea = ({ hour }: InterfaceHourArea) => {
   return (
     <div className={styled.body}>
-      Hora
+      {hour}
     </div>
   )
 };
