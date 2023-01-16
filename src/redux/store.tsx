@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import hoursReducer from "./reducers/hoursReducer";
+import themeReducer from "./reducers/themeReducer";
 
 export const store = configureStore({
   reducer: {
-    week: hoursReducer
+    week: hoursReducer,
+    theme: themeReducer
   }
 });
 
