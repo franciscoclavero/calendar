@@ -1,11 +1,11 @@
 .cell {
   border: 1px solid #41403E;
+  color: #FFFFFF;
   font-size: 12px;
   font-weight: 600;
   height: 32px;
   line-height: 15px;
+  opacity: 0.6;
   padding: 9.5px 0.01px 7.5px 4px;
   width: 150px;
-  color: #FFFFFF;
-  opacity: 0.6;
 }

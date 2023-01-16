@@ -1,6 +1,6 @@
 .body {
+  border-left: 1px solid #41403E;
   height: 100%;
   position: relative;
-  border-left: 1px solid #41403E;
   width: 100%;
 }
