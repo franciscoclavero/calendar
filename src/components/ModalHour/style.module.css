@@ -1,0 +1,12 @@
+.item {
+  position: absolute;
+  width: 118px;
+  height: 64px;
+  border:1px solid #41403E;
+  background-color: rgb(248, 122, 122);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 12px;
+}
