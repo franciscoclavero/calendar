@@ -11,7 +11,7 @@ const DayWeekColumn = ({ dayWeek }: InterfaceDayWeekColumn) => {
   return (
     <div className={styled.body}>
       <HeaderCell title={dayWeek}/>
-      <ContentArea />
+      <ContentArea dayWeek={dayWeek}/>
     </div>
   );
 };
