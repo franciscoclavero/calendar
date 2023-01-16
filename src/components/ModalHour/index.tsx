@@ -1,17 +1,15 @@
+import { MouseEventHandler } from "react";
 import styled from "./style.module.css";
 
 interface InterfaceModalHour {
-  top: number;
-  left: number;
+  onClick: MouseEventHandler<HTMLSpanElement>;
 }
 
-const ModalHour = ( { top, left }: InterfaceModalHour ) => {
+const ModalHour = ( { onClick }: InterfaceModalHour ) => {
   return (
-    <div className={styled.item} style={{
-      top: top,
-      left: left
-    }}>
+    <div className={styled.item}>
       Reservado por 1 Hora
+      <span className={styled.close} onClick={onClick}>X</span>
     </div>
   );
 };

@@ -15,14 +15,16 @@ const HourCell = ({ hour }: InterfaceHourCell) => {
   const handleClick = () => {
     if (!modalShow) setModalShow(!modalShow);
   };
-
+  const handleClickSpan = () => {
+    if (modalShow) setModalShow(!modalShow);
+  }
   return (
     <div className={styled.body}> 
       <HourArea hour={hour} onClick={handleClick}/>
       <DescriptionArea>
         {
           modalShow &&
-          <ModalHour top={0} left={1} />
+          <ModalHour onClick={handleClickSpan} />
         }
       </DescriptionArea>
     </div>
