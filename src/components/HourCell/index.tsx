@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "src/redux/store";
 import DescriptionArea from "../DescriptionArea";
 import HourArea from "../HourArea";
 import ModalHour from "../ModalHour";
@@ -12,7 +14,8 @@ interface InterfaceHourCell {
 
 const HourCell = ({ dayWeek, hour }: InterfaceHourCell) => {
   const [ modalShow, setModalShow ] = useState<true | false>(false);
-
+  const week = useSelector((state: RootState) => state.week);
+  
   useEffect(() => {
     const keyStorage = dayWeek + '_' + hour;
     const storedModal = localStorage.getItem(keyStorage); 
@@ -24,15 +27,14 @@ const HourCell = ({ dayWeek, hour }: InterfaceHourCell) => {
   const handleClickShow = () => {
     const keyStorage = dayWeek + '_' + hour;
     
-    if (!modalShow) setModalShow(true);
-    
+    if (!modalShow) setModalShow(true);  
     localStorage.setItem(keyStorage, JSON.stringify(true));
   };
   const handleClickHide = () => {
     const keyStorage = dayWeek + '_' + hour;
     
     if (modalShow) setModalShow(false);
-    localStorage.setItem(keyStorage, JSON.stringify(false));
+    localStorage.removeItem(keyStorage);
   }
   return (
     <div className={styled.body}> 
