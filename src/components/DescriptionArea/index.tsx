@@ -1,8 +1,16 @@
+import { ReactNode } from "react";
 import styled from "./style.module.css";
 
-const DescriptionArea = () => {
+interface InterfaceDescription {
+  children: ReactNode | ReactNode[];
+};
+
+const DescriptionArea = ({ children }: InterfaceDescription) => {
   return (
     <div className={styled.body}>
+      {
+        children
+      }
     </div>
   )
 };
