@@ -1,6 +1,5 @@
 import { MouseEventHandler, useState } from "react";
-import { useAppSelector } from "src/redux/hooks/useAppSelector";
-import ModalHour from "../ModalHour";
+import { useAppSelector } from "../../redux/hooks/useAppSelector";
 import styled from "./style.module.css";
 
 interface InterfaceHourArea {
