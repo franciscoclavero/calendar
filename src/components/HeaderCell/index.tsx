@@ -1,4 +1,4 @@
-import { useAppSelector } from "src/redux/hooks/useAppSelector";
+import { useAppSelector } from "../../redux/hooks/useAppSelector";
 import styled from "./style.module.css";
 
 interface InterfaceHeaderCell {
