@@ -3,7 +3,11 @@ import DescriptionArea from ".";
 
 describe("Description Area", () => {
   it("Description Area Render", () => {
-    const { container } = render(<DescriptionArea />);
+    const { container } = render(
+      <DescriptionArea>
+        <div></div>
+      </ DescriptionArea>
+      );
 
     const descriptionAreaNode = container.getElementsByClassName('body');
 
