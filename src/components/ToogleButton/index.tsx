@@ -6,15 +6,17 @@ import styled from "./style.module.css";
 const ToogleButton = () => {
   const dispatch = useDispatch();
   const theme = useAppSelector(state => state.theme);
+
+  const buttonText = (theme.type === "light") ? "dark" : 'light';
   
   const handleClick = () => {
-    const newTheme = theme.type === "light" ? "dark" : 'light';
+    const newTheme = (theme.type === "light") ? "dark" : 'light';
 
     dispatch( setThemeType(newTheme) );
   };
 
   return (
-    <div className={styled.body} onClick={handleClick}>Toogle Button</div>
+    <div className={styled.body} onClick={handleClick}>Theme {buttonText}</div>
   )
 };
 
