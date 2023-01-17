@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { useAppSelector } from "src/redux/hooks/useAppSelector";
-import { setThemeType } from "src/redux/reducers/themeReducer";
+import { useAppSelector } from "../../redux/hooks/useAppSelector";
+import { setThemeType } from "../../redux/reducers/themeReducer";
 import styled from "./style.module.css";
 
 const ToogleButton = () => {
