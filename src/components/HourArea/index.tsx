@@ -1,4 +1,5 @@
 import { MouseEventHandler, useState } from "react";
+import { useAppSelector } from "src/redux/hooks/useAppSelector";
 import ModalHour from "../ModalHour";
 import styled from "./style.module.css";
 
@@ -8,8 +9,11 @@ interface InterfaceHourArea {
 }
 
 const HourArea = ({ hour, onClick }: InterfaceHourArea) => {
+  const theme = useAppSelector(state => state.theme);
+  const actualTheme = (theme.type === 'dark') ? theme.dark : theme.light;
+
   return (
-    <div className={styled.body} onClick={onClick}>
+    <div className={styled.body} onClick={onClick} style={actualTheme}>
       {hour}
     </div>
   )

@@ -1,3 +1,4 @@
+import { useAppSelector } from "src/redux/hooks/useAppSelector";
 import styled from "./style.module.css";
 
 interface InterfaceHeaderCell {
@@ -5,8 +6,11 @@ interface InterfaceHeaderCell {
 }
 
 const HeaderCell = ({ title }:InterfaceHeaderCell )  => {
+  const theme = useAppSelector(state => state.theme);
+  const actualTheme = (theme.type === 'dark') ? theme.dark : theme.light;
+
   return (
-    <div className={styled.cell}>{title}</div>
+    <div className={styled.cell} style={actualTheme}>{title}</div>
   );
 };
 

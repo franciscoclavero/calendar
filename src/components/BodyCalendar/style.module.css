@@ -1,8 +1,7 @@
 .body {
-  background-color: #56505E;
   border: 1px solid #41403E;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
   margin: auto;
   width: 1050px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
