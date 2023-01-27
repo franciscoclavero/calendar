@@ -2,7 +2,7 @@
 
 # Agenda Semanal
 
-Este éum projeto de agenda, onde ao clicar na hora ele cria um card de uma hora, podendo apagar o mesmo. O projeto possui dark/light theme.
+Este é um projeto de agenda, onde ao clicar na hora ele cria um card de uma hora, podendo apagar o mesmo. O projeto possui dark/light theme.
 
 ## Tecnologies
 
